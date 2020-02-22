@@ -1,0 +1,3 @@
+defmodule <%= @context[:base] %>.<%= @context[:scoped] %> do
+  use ExUnit.Case, async: true
+end

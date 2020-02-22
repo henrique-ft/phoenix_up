@@ -21,68 +21,32 @@ defmodule Mix.Tasks.PhxUp.Gen.Controller do
 
     context = get_context(args)
 
-    IO.inspect(context)
-
-    #create_user_controller(base_context)
-    #create_user_view(base_context)
-    #create_user_controller_test(base_context)
-    #create_user_view_test(base_context)
+    create_controller(context)
+    create_controller_test(context)
 
     IO.puts("")
   end
 
-  #defp create_user_controller(base_context) do
-    #context = Inflector.call("#{base_context}UserController")
+  defp create_controller(context) do
+    copy_template(
+      "controller.eex",
+      "lib/#{context[:web_path]}/controllers/#{context[:path]}.ex",
+      context: context
+    )
+  end
 
-    #copy_template(
-      #"user_controller.eex",
-      #"lib/#{context[:web_path]}/controllers/#{context[:path]}.ex",
-      #context: context
-    #)
-  #end
+  defp create_controller_test(context) do
+    copy_template(
+      "controller_test.eex",
+      "test/#{context[:web_path]}/controllers/#{context[:path]}_test.exs",
+      context: context
+    )
+  end
 
-  #defp create_user_controller_test(base_context) do
-    #context = Inflector.call("#{base_context}UserControllerTest")
-
-    #user_module =
-      #config(:user_module)
-      #|> Atom.to_string()
-      #|> String.replace("Elixir.", "")
-
-    #repo =
-      #config(:repo)
-      #|> Atom.to_string()
-      #|> String.replace("Elixir.", "")
-
-    #copy_template(
-      #"user_controller_test.eex",
-      #"test/#{context[:web_path]}/controllers/#{context[:path]}_test.exs",
-      #context: Keyword.merge(context, user_module: user_module, repo: repo)
-    #)
-  #end
-
-  #defp create_user_view(base_context) do
-    #context = Inflector.call("#{base_context}UserView")
-
-    #copy_template("user_view.eex", "lib/#{context[:web_path]}/views/#{context[:path]}.ex",
-      #context: context
-    #)
-  #end
-
-  #defp create_user_view_test(base_context) do
-    #context = Inflector.call("#{base_context}UserView")
-
-    #copy_template(
-      #"user_view_test.eex",
-      #"test/#{context[:web_path]}/views/#{context[:path]}_test.exs",
-      #context: context
-    #)
-  #end
-
-  #defp copy_template(name, final_path, opts) do
-    #Path.join(:code.priv_dir(:entrance), "templates/entrance.gen.phx_user_controller/#{name}")
-    #|> Mix.Generator.copy_template(final_path, opts)
-  #end
+  defp copy_template(name, final_path, opts) do
+    Path.join(:code.priv_dir(:phoenix_up), "templates/phx_up.gen.controller/#{name}")
+    |> Mix.Generator.copy_template(final_path, opts)
+  end
 
   defp get_context([module]), do: Inflector.call(module)
   defp get_context([]), do: raise(RuntimeError, "Invalid module name")

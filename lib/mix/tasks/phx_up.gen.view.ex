@@ -1,4 +1,4 @@
-defmodule Mix.Tasks.PhxUp.Gen.Plug do
+defmodule Mix.Tasks.PhxUp.Gen.View do
   @shortdoc false
   @moduledoc false
 
@@ -13,38 +13,38 @@ defmodule Mix.Tasks.PhxUp.Gen.Plug do
        ___| |_ _ _      |  |  |  _  |
       | . |   |_'_|     |  |  |   __|
       |  _|_|_|_,_|_____|_____|__|
-      |_|         |_____|            .gen.plug
+      |_|         |_____|            .gen.view
       """)
     end
 
-    IO.puts("... Preparing plug")
+    IO.puts("... Preparing user view")
 
     context = get_context(args)
 
-    create_plug(context)
-    create_plug_test(context)
+    create_user_view(context)
+    create_user_view_test(context)
 
     IO.puts("")
   end
 
-  defp create_plug(context) do
+  defp create_user_view(context) do
     copy_template(
-      "plug.eex",
-      "lib/#{context[:web_path]}/plugs/#{context[:path]}.ex",
+      "view.eex",
+      "lib/#{context[:web_path]}/views/#{context[:path]}.ex",
       context: context
     )
   end
 
-  defp create_plug_test(context) do
+  defp create_user_view_test(context) do
     copy_template(
-      "plug_test.eex",
-      "test/#{context[:web_path]}/plugs/#{context[:path]}_test.exs",
+      "view_test.eex",
+      "test/#{context[:web_path]}/views/#{context[:path]}_test.exs",
       context: context
     )
   end
 
   defp copy_template(name, final_path, opts) do
-    Path.join(:code.priv_dir(:phoenix_up), "templates/phx_up.gen.plug/#{name}")
+    Path.join(:code.priv_dir(:phoenix_up), "templates/phx_up.gen.view/#{name}")
     |> Mix.Generator.copy_template(final_path, opts)
   end
 

@@ -42,6 +42,7 @@ defmodule PhoenixUp.Mix.Inflector do
     web_path = base |> web_path()
     scoped = camelize(singular)
     path = underscore(scoped)
+    base_path = underscore(base)
     singular = String.split(path, "/") |> List.last()
     module = Module.concat(base, scoped) |> inspect
     test_module = "#{module}Test"
@@ -52,6 +53,7 @@ defmodule PhoenixUp.Mix.Inflector do
       alias: alias,
       human: human,
       base: base,
+      base_path: base_path,
       web_module: web_module,
       web_path: web_path,
       test_module: test_module,

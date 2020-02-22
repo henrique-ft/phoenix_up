@@ -1,0 +1,2 @@
+defmodule <%= @context[:web_module] %>.<%= @context[:scoped] %> do
+end

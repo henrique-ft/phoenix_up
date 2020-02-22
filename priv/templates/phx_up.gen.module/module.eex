@@ -1,0 +1,2 @@
+defmodule <%= @context[:base] %>.<%= @context[:scoped] %> do
+end
