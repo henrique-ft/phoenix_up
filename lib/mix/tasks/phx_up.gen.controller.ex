@@ -1,8 +1,7 @@
 defmodule Mix.Tasks.PhxUp.Gen.Controller do
-  @shortdoc false
+  @shortdoc "Generate a controller file and a controller test file"
   @moduledoc false
 
-  alias PhoenixUp.Mix.Inflector
   use Mix.Task
 
   @doc false
@@ -52,6 +51,7 @@ defmodule Mix.Tasks.PhxUp.Gen.Controller do
   end
 
   defp get_actions([_|actions]), do: actions
-  defp get_context([module|_]), do: Inflector.call(module)
+  defp get_context([module|_]), do: PhoenixUp.inflect(module)
   defp get_context([]), do: raise(RuntimeError, "Invalid module name")
 end
+

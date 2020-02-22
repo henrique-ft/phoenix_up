@@ -1,8 +1,7 @@
 defmodule Mix.Tasks.PhxUp.Gen.ControllerViewTemplate do
-  @shortdoc false
+  @shortdoc "Generate a controller, view and template (for each action) and tests"
   @moduledoc false
 
-  alias PhoenixUp.Mix.Inflector
   use Mix.Task
 
   @doc false
@@ -59,6 +58,7 @@ defmodule Mix.Tasks.PhxUp.Gen.ControllerViewTemplate do
   end
 
   defp get_actions([_|actions]), do: actions
-  defp get_context([module|_]), do: Inflector.call(module)
+  defp get_context([module|_]), do: PhoenixUp.inflect(module)
   defp get_context([]), do: raise(RuntimeError, "Invalid module name")
 end
+
