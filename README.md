@@ -2,7 +2,7 @@
 
 # PhoenixUp
 
-![version badge](https://img.shields.io/hexpm/v/phoenix_up?style=flat-square) ![license badge](https://img.shields.io/github/license/henriquefernandez/phoenix_up?style=flat-square)
+![version badge](https://img.shields.io/hexpm/v/phoenix_up?style=plastic) ![license badge](https://img.shields.io/hexpm/l/phoenix_up?style=plastic)
 
 ### Generators
 
