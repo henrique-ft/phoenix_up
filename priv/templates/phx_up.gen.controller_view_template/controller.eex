@@ -2,6 +2,7 @@ defmodule <%= @context[:web_module] %>.<%= @context[:scoped] %>Controller do
   use <%= @context[:web_module] %>, :controller
 <%= for action <- @actions do %>
   def <%= action %>(conn, _params) do
+    render(conn, "<%= action %>.html")
   end
 <% end %>
 end

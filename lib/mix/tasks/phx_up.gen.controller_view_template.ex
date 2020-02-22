@@ -1,4 +1,4 @@
-defmodule Mix.Tasks.PhxUp.Gen.Controller do
+defmodule Mix.Tasks.PhxUp.Gen.ControllerViewTemplate do
   @shortdoc false
   @moduledoc false
 
@@ -13,7 +13,7 @@ defmodule Mix.Tasks.PhxUp.Gen.Controller do
        ___| |_ _ _      |  |  |  _  |
       | . |   |_'_|     |  |  |   __|
       |  _|_|_|_,_|_____|_____|__|
-      |_|         |_____|            .gen.controller
+      |_|         |_____|            .gen.controller_view_template
       """)
     end
 
@@ -24,6 +24,13 @@ defmodule Mix.Tasks.PhxUp.Gen.Controller do
 
     create_controller(context, actions)
     create_controller_test(context, actions)
+
+    IO.puts("")
+    Mix.Tasks.PhxUp.Gen.View.run(false, args)
+
+    for action <- actions do
+      Mix.Tasks.PhxUp.Gen.Template.run(false, ["#{context[:path]}/#{action}"])
+    end
 
     IO.puts("")
   end
@@ -47,7 +54,7 @@ defmodule Mix.Tasks.PhxUp.Gen.Controller do
   end
 
   defp copy_template(name, final_path, opts) do
-    Path.join(:code.priv_dir(:phoenix_up), "templates/phx_up.gen.controller/#{name}")
+    Path.join(:code.priv_dir(:phoenix_up), "templates/phx_up.gen.controller_view_template/#{name}")
     |> Mix.Generator.copy_template(final_path, opts)
   end
 

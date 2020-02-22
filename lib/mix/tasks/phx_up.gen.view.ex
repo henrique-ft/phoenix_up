@@ -48,6 +48,6 @@ defmodule Mix.Tasks.PhxUp.Gen.View do
     |> Mix.Generator.copy_template(final_path, opts)
   end
 
-  defp get_context([module]), do: Inflector.call(module)
+  defp get_context([module|_]), do: Inflector.call(module)
   defp get_context([]), do: raise(RuntimeError, "Invalid module name")
 end
