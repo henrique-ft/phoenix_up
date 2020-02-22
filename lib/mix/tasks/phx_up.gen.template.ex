@@ -1,4 +1,4 @@
-defmodule Mix.Tasks.PhxUp.Gen.Module do
+defmodule Mix.Tasks.PhxUp.Gen.Template do
   @shortdoc false
   @moduledoc false
 
@@ -13,38 +13,29 @@ defmodule Mix.Tasks.PhxUp.Gen.Module do
        ___| |_ _ _      |  |  |  _  |
       | . |   |_'_|     |  |  |   __|
       |  _|_|_|_,_|_____|_____|__|
-      |_|         |_____|            .gen.module
+      |_|         |_____|            .gen.template
       """)
     end
 
-    IO.puts("... Preparing module")
+    IO.puts("... Preparing template")
 
     context = get_context(args)
 
-    create_module(context)
-    create_module_test(context)
+    create_template(context)
 
     IO.puts("")
   end
 
-  defp create_module(context) do
+  defp create_template(context) do
     copy_template(
-      "module.eex",
-      "lib/#{context[:base_path]}/#{context[:path]}.ex",
-      context: context
-    )
-  end
-
-  defp create_module_test(context) do
-    copy_template(
-      "module_test.eex",
-      "test/lib/#{context[:base_path]}/#{context[:path]}_test.exs",
+      "template.eex",
+      "lib/#{context[:web_path]}/templates/#{context[:path]}.html.eex",
       context: context
     )
   end
 
   defp copy_template(name, final_path, opts) do
-    Path.join(:code.priv_dir(:phoenix_up), "templates/phx_up.gen.module/#{name}")
+    Path.join(:code.priv_dir(:phoenix_up), "templates/phx_up.gen.template/#{name}")
     |> Mix.Generator.copy_template(final_path, opts)
   end
 

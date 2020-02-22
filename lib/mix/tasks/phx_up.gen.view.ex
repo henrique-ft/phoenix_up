@@ -30,7 +30,7 @@ defmodule Mix.Tasks.PhxUp.Gen.View do
   defp create_user_view(context) do
     copy_template(
       "view.eex",
-      "lib/#{context[:web_path]}/views/#{context[:path]}.ex",
+      "lib/#{context[:web_path]}/views/#{context[:path]}_view.ex",
       context: context
     )
   end
@@ -38,7 +38,7 @@ defmodule Mix.Tasks.PhxUp.Gen.View do
   defp create_user_view_test(context) do
     copy_template(
       "view_test.eex",
-      "test/#{context[:web_path]}/views/#{context[:path]}_test.exs",
+      "test/#{context[:web_path]}/views/#{context[:path]}_view_test.exs",
       context: context
     )
   end
@@ -48,6 +48,6 @@ defmodule Mix.Tasks.PhxUp.Gen.View do
     |> Mix.Generator.copy_template(final_path, opts)
   end
 
-  defp get_context([module]), do: Inflector.call(module)
+  defp get_context([module|_]), do: Inflector.call(module)
   defp get_context([]), do: raise(RuntimeError, "Invalid module name")
 end

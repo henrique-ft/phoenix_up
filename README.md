@@ -6,11 +6,15 @@
 
 PhoenixUp provide this extra generators for *Phoenix* projects development:
 
-`phx_up.gen.controller Some.ControllerName` (`phx_up.gen.c`)
+`phx_up.gen.controller Some.ControllerName some_action another_action` (`phx_up.gen.c`)
 
 `phx_up.gen.view Some.ViewName` (`phx_up.gen.v`)
 
 `phx_up.gen.controller_view Some.ControllerViewName` (`phx_up.gen.cv`)
+
+`phx_up.gen.template some/template/path` (`phx_up.gen.t`)
+
+`phx_up.gen.controller_view_template Some.ControllerName some_action another_action` (`phx_up.gen.cvt`)
 
 `phx_up.gen.module Some.ModuleName` (`phx_up.gen.m`)
 
@@ -30,7 +34,7 @@ The package can be installed by adding `phoenix_up` to your list of dependencies
 ```elixir
 def deps do
   [
-    {:phoenix_up, "~> 0.1.1", only: :dev}
+    {:phoenix_up, "~> 0.1.2", only: :dev}
   ]
 end
 ```

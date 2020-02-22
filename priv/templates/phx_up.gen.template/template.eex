@@ -1,0 +1,3 @@
+<h1>PhoenixUp</h1>
+
+<h4>lib/<%= @context[:web_path] %>/templates/<%= @context[:path] %>.html.eex</h4>
