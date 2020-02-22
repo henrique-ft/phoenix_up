@@ -2,6 +2,8 @@
 
 # PhoenixUp
 
+https://img.shields.io/github/license/henriquefernandez/phoenix_up?style=social
+
 ## Installation
 
 If [available in Hex](https://hex.pm/docs/publish), the package can be installed
