@@ -1,6 +1,18 @@
 defmodule Mix.Tasks.PhxUp.Gen.ControllerViewTemplate do
   @shortdoc "Generate a controller, view and template (for each action) and tests"
-  @moduledoc "Generate a controller, view and template (for each action) and tests"
+  @moduledoc """
+  Generate a controller, view, templates (for each action) and tests.
+
+      mix phx_up.gen.controller_view_template Post create update index find
+
+  or
+
+      mix phx_up.gen.cvt Post create update index find
+
+  The first argument is the controller module followed by the actions.
+
+  Actions can be empty.
+  """
 
   use Mix.Task
 

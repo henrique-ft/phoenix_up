@@ -1,6 +1,18 @@
 defmodule Mix.Tasks.PhxUp.Gen.Controller do
   @shortdoc "Generate a controller file and a controller test file"
-  @moduledoc "Generate a controller file and a controller test file"
+  @moduledoc """
+  Generate a controller file and a controller test file.
+
+      mix phx_up.gen.controller Post create update index find
+
+  or
+
+      mix phx_up.gen.c Post create update index find
+
+  The first argument is the controller module followed by the actions.
+
+  Actions can be empty.
+  """
 
   use Mix.Task
 

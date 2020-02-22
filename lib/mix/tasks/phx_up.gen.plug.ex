@@ -1,6 +1,16 @@
 defmodule Mix.Tasks.PhxUp.Gen.Plug do
   @shortdoc "Generate a plug file and a plug test file"
-  @moduledoc "Generate a plug file and a plug test file"
+  @moduledoc """
+  Generate a plug file and a plug test file.
+
+      mix phx_up.gen.plug Request.Login.Filter
+
+  or
+
+      mix phx_up.gen.p Request.Login.Filter
+
+  The first argument is the plug name.
+  """
 
   use Mix.Task
 

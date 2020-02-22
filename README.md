@@ -24,6 +24,8 @@
 
 All the files generated come with the corresponding test file.
 
+You can find more in-depth [documentation here](https://hexdocs.pm/phoenix_up/api-reference.html#content).
+
 I hope you **enjoy**!
 
 ## Installation
@@ -33,7 +35,7 @@ The package can be installed by adding `phoenix_up` to your list of dependencies
 ```elixir
 def deps do
   [
-    {:phoenix_up, "~> 0.1.5", only: :dev}
+    {:phoenix_up, "~> 0.1.6", only: :dev}
   ]
 end
 ```
