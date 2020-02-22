@@ -4,9 +4,7 @@
 
 ![version badge](https://img.shields.io/hexpm/v/phoenix_up?style=social) ![license badge](https://img.shields.io/hexpm/l/phoenix_up?style=social)
 
-### Generators
-
-*PhoenixUp* provide this extra generators for *Phoenix* projects development:
+*PhoenixUp* provide this extra generators for develop *Phoenix* projects:
 
 `phx_up.gen.controller Some.ControllerName some_action another_action` (`phx_up.gen.c`)
 
@@ -26,28 +24,6 @@
 
 All the files generated come with the corresponding test file.
 
-### Build your own
-
-We can use internal `inflect/1` funcion from *PhoenixUp* beside [Mix.Generator](https://hexdocs.pm/mix/Mix.Generator.html) for help building new generators:
-
-```Elixir
-PhoenixUp.inflect(Admin.User)
-
-# ...
-
-  [alias: "User",
-   human: "User",
-   base: "Phoenix",
-   base_path: "phoenix",
-   web_module: "PhoenixWeb",
-   web_path: "phoenix_web",
-   module: "Phoenix.Admin.User",
-   test_module: "Phoenix.Admin.UserTest",
-   scoped: "Admin.User",
-   singular: "user",
-   path: "admin/user"]
-```
-
 I hope you **enjoy**!
 
 ## Installation
@@ -57,7 +33,7 @@ The package can be installed by adding `phoenix_up` to your list of dependencies
 ```elixir
 def deps do
   [
-    {:phoenix_up, "~> 0.1.4"}
+    {:phoenix_up, "~> 0.1.5", only: :dev}
   ]
 end
 ```

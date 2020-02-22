@@ -1,6 +1,6 @@
 defmodule Mix.Tasks.PhxUp.Gen.ControllerViewTemplate do
   @shortdoc "Generate a controller, view and template (for each action) and tests"
-  @moduledoc false
+  @moduledoc "Generate a controller, view and template (for each action) and tests"
 
   use Mix.Task
 

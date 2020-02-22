@@ -1,6 +1,6 @@
 defmodule Mix.Tasks.PhxUp.Gen.Controller do
   @shortdoc "Generate a controller file and a controller test file"
-  @moduledoc false
+  @moduledoc "Generate a controller file and a controller test file"
 
   use Mix.Task
 

@@ -1,6 +1,6 @@
 defmodule Mix.Tasks.PhxUp.Gen.View do
   @shortdoc "Generate a view file and its test"
-  @moduledoc false
+  @moduledoc "Generate a view file and its test"
 
   use Mix.Task
 

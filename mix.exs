@@ -4,12 +4,12 @@ defmodule PhoenixUp.MixProject do
   def project do
     [
       app: :phoenix_up,
-      version: "0.1.4",
+      version: "0.1.5",
       elixir: "~> 1.9",
       elixirc_paths: elixirc_paths(Mix.env()),
       build_embedded: Mix.env() == :prod,
       start_permanent: Mix.env() == :prod,
-      description: "More generators, productivity and fun for our phoenix projects",
+      description: "Extra generators for develop Phoenix projects faster.",
       package: package(),
       docs: [logo: "priv/static/logo-orange.png", extras: ["README.md"], main: "readme"],
       name: "PhoenixUp",

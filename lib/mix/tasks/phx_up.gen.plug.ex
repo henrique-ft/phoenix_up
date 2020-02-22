@@ -1,6 +1,6 @@
 defmodule Mix.Tasks.PhxUp.Gen.Plug do
   @shortdoc "Generate a plug file and a plug test file"
-  @moduledoc false
+  @moduledoc "Generate a plug file and a plug test file"
 
   use Mix.Task
 

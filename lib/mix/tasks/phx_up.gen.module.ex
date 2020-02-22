@@ -1,6 +1,6 @@
 defmodule Mix.Tasks.PhxUp.Gen.Module do
   @shortdoc "Generate a module file in lib/your_app and a module test file"
-  @moduledoc false
+  @moduledoc "Generate a module file in lib/your_app and a module test file"
 
   use Mix.Task
 

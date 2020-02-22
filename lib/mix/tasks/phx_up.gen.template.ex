@@ -1,6 +1,6 @@
 defmodule Mix.Tasks.PhxUp.Gen.Template do
   @shortdoc "Generate a template file"
-  @moduledoc false
+  @moduledoc "Generate a template file"
 
   use Mix.Task
 
