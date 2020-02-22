@@ -11,7 +11,7 @@ defmodule PhoenixUp.MixProject do
       start_permanent: Mix.env() == :prod,
       description: "More generators, productivity and fun for our phoenix projects",
       package: package(),
-      docs: [logo: "priv/static/logo.png", extras: ["README.md"], main: "readme"],
+      docs: [logo: "priv/static/logo-orange.png", extras: ["README.md"], main: "readme"],
       name: "PhoenixUp",
       deps: deps()
     ]
