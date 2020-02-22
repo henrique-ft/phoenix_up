@@ -1,6 +1,6 @@
-![Phoenix Up](https://github.com/henriquefernandez/phoenix_up/blob/master/priv/static/logo-small.png)
+![PhoenixUp](https://github.com/henriquefernandez/phoenix_up/blob/master/priv/static/logo-small.png)
 
-# Phoenix Up
+# PhoenixUp
 
 ## Installation
 
