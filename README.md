@@ -2,7 +2,7 @@
 
 # PhoenixUp
 
-![license badge](https://img.shields.io/github/license/henriquefernandez/phoenix_up?style=social)
+![version badge](https://img.shields.io/hexpm/v/phoenix_up?style=flat-square) ![license badge](https://img.shields.io/github/license/henriquefernandez/phoenix_up?style=flat-square)
 
 PhoenixUp provide this extra generators for *Phoenix* projects development:
 
