@@ -1,8 +1,7 @@
 defmodule Mix.Tasks.PhxUp.Gen.WebModule do
-  @shortdoc false
+  @shortdoc "Generate a module in lib/your_app_web and its test"
   @moduledoc false
 
-  alias PhoenixUp.Mix.Inflector
   use Mix.Task
 
   @doc false
@@ -48,6 +47,6 @@ defmodule Mix.Tasks.PhxUp.Gen.WebModule do
     |> Mix.Generator.copy_template(final_path, opts)
   end
 
-  defp get_context([module|_]), do: Inflector.call(module)
+  defp get_context([module|_]), do: PhoenixUp.inflect(module)
   defp get_context([]), do: raise(RuntimeError, "Invalid module name")
 end

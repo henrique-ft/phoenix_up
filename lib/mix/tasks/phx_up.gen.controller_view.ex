@@ -1,5 +1,5 @@
 defmodule Mix.Tasks.PhxUp.Gen.ControllerView do
-  @shortdoc false
+  @shortdoc "Generate a controller, a view and tests"
   @moduledoc false
 
   use Mix.Task
