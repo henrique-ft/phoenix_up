@@ -4,7 +4,7 @@
 
 ![version badge](https://img.shields.io/hexpm/v/phoenix_up?style=flat-square) ![license badge](https://img.shields.io/github/license/henriquefernandez/phoenix_up?style=flat-square)
 
-PhoenixUp provide this extra generators for *Phoenix* projects development:
+*PhoenixUp* provide this extra generators for *Phoenix* projects development:
 
 `phx_up.gen.controller Some.ControllerName some_action another_action` (`phx_up.gen.c`)
 
