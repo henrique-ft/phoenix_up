@@ -4,7 +4,7 @@ defmodule PhoenixUp.MixProject do
   def project do
     [
       app: :phoenix_up,
-      version: "0.1.0",
+      version: "0.1.1",
       elixir: "~> 1.9",
       elixirc_paths: elixirc_paths(Mix.env()),
       build_embedded: Mix.env() == :prod,
@@ -22,7 +22,7 @@ defmodule PhoenixUp.MixProject do
   end
 
   defp deps do
-    []
+    [{:ex_doc, ">= 0.0.0", only: :dev, runtime: false}]
   end
 
   defp elixirc_paths(:test), do: ["lib", "test/support", "test"]

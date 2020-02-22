@@ -1,4 +1,4 @@
-defmodule Mix.Tasks.PhxUp.Gen.Module do
+defmodule Mix.Tasks.PhxUp.Gen.WebModule do
   @shortdoc false
   @moduledoc false
 

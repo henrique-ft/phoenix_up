@@ -30,7 +30,7 @@ The package can be installed by adding `phoenix_up` to your list of dependencies
 ```elixir
 def deps do
   [
-    {:phoenix_up, "~> 0.1.0", only: :dev}
+    {:phoenix_up, "~> 0.1.1", only: :dev}
   ]
 end
 ```
