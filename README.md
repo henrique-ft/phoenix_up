@@ -1,4 +1,4 @@
-![PhoenixUp](https://raw.githubusercontent.com/henriquefernandez/phoenix_up/master/priv/static/logo-small.png)
+![PhoenixUp](https://raw.githubusercontent.com/henriquefernandez/phoenix_up/master/priv/static/logo-orange-small.png)
 
 # PhoenixUp
 
