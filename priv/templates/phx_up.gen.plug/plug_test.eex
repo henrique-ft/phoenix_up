@@ -1,0 +1,27 @@
+defmodule <%= @context[:web_module] %>.<%= @context[:scoped] %>Test do
+  use <%= @context[:web_module] %>.ConnCase, async: true
+
+  setup do
+    opts =
+      Plug.Session.init(
+        store: :cookie,
+        key: "test_key",
+        encryption_salt: "test_encryption_salt",
+        signing_salt: "test_signing_salt",
+        log: false,
+        encrypt: false
+      )
+
+    session_conn =
+      build_conn()
+      |> Plug.Session.call(opts)
+      |> fetch_session()
+      |> fetch_flash()
+
+    %{session_conn: session_conn}
+  end
+
+  describe "<%= @context[:web_module] %>.<%= @context[:scoped] %>.call/2" do
+  end
+end
+
