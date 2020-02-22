@@ -1,4 +1,4 @@
-![Entrance](https://www.truehenrique.com/images/phoenix_up_logo.png)
+![Phoenix Up](https://github.com/henriquefernandez/phoenix_up/blob/master/priv/static/logo-small.png)
 
 # Phoenix Up
 
