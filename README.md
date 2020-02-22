@@ -2,7 +2,7 @@
 
 # PhoenixUp
 
-https://img.shields.io/github/license/henriquefernandez/phoenix_up?style=social
+![license badge](https://img.shields.io/github/license/henriquefernandez/phoenix_up?style=social)
 
 ## Installation
 
