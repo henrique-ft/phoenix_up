@@ -30,7 +30,7 @@ defmodule Mix.Tasks.PhxUp.Gen.Controller do
   defp create_controller(context) do
     copy_template(
       "controller.eex",
-      "lib/#{context[:web_path]}/controllers/#{context[:path]}.ex",
+      "lib/#{context[:web_path]}/controllers/#{context[:path]}_controller.ex",
       context: context
     )
   end
@@ -38,7 +38,7 @@ defmodule Mix.Tasks.PhxUp.Gen.Controller do
   defp create_controller_test(context) do
     copy_template(
       "controller_test.eex",
-      "test/#{context[:web_path]}/controllers/#{context[:path]}_test.exs",
+      "test/#{context[:web_path]}/controllers/#{context[:path]}_controller_test.exs",
       context: context
     )
   end
