@@ -10,7 +10,7 @@
 
 `phx_up.gen.view Some.ViewName` (`phx_up.gen.v`)
 
-`phx_up.gen.controller_view Some.ControllerViewName` (`phx_up.gen.cv`)
+`phx_up.gen.controller_view Some.ControllerViewName some_action another_action` (`phx_up.gen.cv`)
 
 `phx_up.gen.template some/template/path` (`phx_up.gen.t`)
 
