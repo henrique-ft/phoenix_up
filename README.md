@@ -24,6 +24,24 @@
 
 All the files generated come with the corresponding test file.
 
+All generators has its deletion version:
+
+`phx_up.del.controller Some.ControllerName` (`phx_up.del.c`)
+
+`phx_up.del.view Some.ViewName` (`phx_up.del.v`)
+
+`phx_up.del.controller_view Some.ControllerViewName` (`phx_up.del.cv`)
+
+`phx_up.del.template some/template/path` (`phx_up.del.t`)
+
+`phx_up.del.controller_view_template Some.ControllerName` (`phx_up.del.cvt`)
+
+`phx_up.del.module Some.ModuleName` (`phx_up.del.m`)
+
+`phx_up.del.web_module Some.WebModuleName` (`phx_up.del.wm`)
+
+`phx_up.del.plug Some.PlugName` (`phx_up.del.p`)
+
 You can find more in-depth [documentation here](https://hexdocs.pm/phoenix_up/api-reference.html#content).
 
 I hope you **enjoy**!

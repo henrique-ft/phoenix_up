@@ -26,17 +26,17 @@ defmodule Mix.Tasks.PhxUp.Gen.View do
       """)
     end
 
-    IO.puts("... Preparing user view")
+    IO.puts("... Preparing view")
 
     context = get_context(args)
 
-    create_user_view(context)
-    create_user_view_test(context)
+    create_view(context)
+    create_view_test(context)
 
     IO.puts("")
   end
 
-  defp create_user_view(context) do
+  defp create_view(context) do
     copy_template(
       "view.eex",
       "lib/#{context[:web_path]}/views/#{context[:path]}_view.ex",
@@ -44,7 +44,7 @@ defmodule Mix.Tasks.PhxUp.Gen.View do
     )
   end
 
-  defp create_user_view_test(context) do
+  defp create_view_test(context) do
     copy_template(
       "view_test.eex",
       "test/#{context[:web_path]}/views/#{context[:path]}_view_test.exs",
