@@ -30,19 +30,19 @@ defmodule Mix.Tasks.PhxUp.Del.View do
 
     context = get_context(args)
 
-    delete_user_view(context)
-    delete_user_view_test(context)
+    delete_view(context)
+    delete_view_testcontext)
 
     IO.puts("")
   end
 
-  defp delete_user_view(context) do
+  defp delete_view(context) do
     path = "lib/#{context[:web_path]}/views/#{context[:path]}_view.ex"
     IO.puts(IO.ANSI.light_red() <> "* deleting " <> IO.ANSI.reset() <> path)
     File.rm!(path)
   end
 
-  defp delete_user_view_test(context) do
+  defp delete_view_test(context) do
     path = "test/#{context[:web_path]}/views/#{context[:path]}_view_test.exs"
     IO.puts(IO.ANSI.light_red() <> "* deleting " <> IO.ANSI.reset() <> path)
     File.rm!(path)
