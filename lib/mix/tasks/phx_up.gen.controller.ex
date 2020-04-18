@@ -28,7 +28,7 @@ defmodule Mix.Tasks.PhxUp.Gen.Controller do
       """)
     end
 
-    IO.puts("... Preparing user controller")
+    IO.puts("... Preparing controller")
 
     context = get_context(args)
     actions = get_actions(args)
