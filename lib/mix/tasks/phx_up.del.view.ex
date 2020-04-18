@@ -31,7 +31,7 @@ defmodule Mix.Tasks.PhxUp.Del.View do
     context = get_context(args)
 
     delete_view(context)
-    delete_view_testcontext)
+    delete_view_test(context)
 
     IO.puts("")
   end
