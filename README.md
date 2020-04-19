@@ -4,7 +4,7 @@
 
 ![version badge](https://img.shields.io/hexpm/v/phoenix_up?style=social) ![license badge](https://img.shields.io/hexpm/l/phoenix_up?style=social)
 
-*PhoenixUp* provides extra generators for developing *Phoenix* projects:
+*PhoenixUp* provides extra **generators** for developing *Phoenix* projects:
 
 `phx_up.gen.controller Some.ControllerName some_action another_action` (`phx_up.gen.c`)
 
@@ -22,9 +22,9 @@
 
 `phx_up.gen.plug Some.PlugName` (`phx_up.gen.p`)
 
-All the files generated come with the corresponding test file.
+All the files generated come with the corresponding **test file**.
 
-All generators has its deletion version:
+All generators has its **deletion** version:
 
 `phx_up.del.controller Some.ControllerName` (`phx_up.del.c`)
 
