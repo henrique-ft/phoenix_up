@@ -47,7 +47,7 @@ defmodule Mix.Tasks.PhxUp.Gen.Module do
   defp create_module_test(context) do
     copy_template(
       "module_test.eex",
-      "test/lib/#{context[:base_path]}/#{context[:path]}_test.exs",
+      "test/#{context[:base_path]}/#{context[:path]}_test.exs",
       context: context
     )
   end

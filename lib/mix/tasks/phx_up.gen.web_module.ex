@@ -47,7 +47,7 @@ defmodule Mix.Tasks.PhxUp.Gen.WebModule do
   defp create_web_module_test(context) do
     copy_template(
       "web_module_test.eex",
-      "test/lib/#{context[:web_path]}/#{context[:path]}_test.exs",
+      "test/#{context[:web_path]}/#{context[:path]}_test.exs",
       context: context
     )
   end
