@@ -4,7 +4,7 @@
 
 ![version badge](https://img.shields.io/hexpm/v/phoenix_up?style=social) ![license badge](https://img.shields.io/hexpm/l/phoenix_up?style=social)
 
-*PhoenixUp* provides extra **generators** for developing *Phoenix* projects:
+*PhoenixUp* provides extra **generators** for develop *Phoenix* projects faster:
 
 `phx_up.gen.controller Some.ControllerName some_action another_action` (`phx_up.gen.c`)
 
@@ -53,7 +53,7 @@ The package can be installed by adding `phoenix_up` to your list of dependencies
 ```elixir
 def deps do
   [
-    {:phoenix_up, "~> 0.2.0", only: :dev}
+    {:phoenix_up, "~> 0.2.1", only: :dev}
   ]
 end
 ```
