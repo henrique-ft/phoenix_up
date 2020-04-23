@@ -43,7 +43,7 @@ defmodule Mix.Tasks.PhxUp.Del.WebModule do
   end
 
   defp delete_web_module_test(context) do
-    path = "test/lib/#{context[:web_path]}/#{context[:path]}_test.exs"
+    path = "test/#{context[:web_path]}/#{context[:path]}_test.exs"
     IO.puts(IO.ANSI.light_red() <> "* deleting " <> IO.ANSI.reset() <> path)
     File.rm!(path)
   end

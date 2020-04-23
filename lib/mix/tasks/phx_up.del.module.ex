@@ -43,7 +43,7 @@ defmodule Mix.Tasks.PhxUp.Del.Module do
   end
 
   defp delete_module_test(context) do
-    path = "test/lib/#{context[:base_path]}/#{context[:path]}_test.exs"
+    path = "test/#{context[:base_path]}/#{context[:path]}_test.exs"
     IO.puts(IO.ANSI.light_red() <> "* deleting " <> IO.ANSI.reset() <> path)
     File.rm!(path)
   end
