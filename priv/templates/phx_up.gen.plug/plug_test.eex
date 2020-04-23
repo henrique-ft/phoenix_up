@@ -1,5 +1,6 @@
 defmodule <%= @context[:web_module] %>.Plugs.<%= @context[:scoped] %>Test do
   use <%= @context[:web_module] %>.ConnCase, async: true
+  alias <%= @context[:web_module] %>.Plugs.<%= @context[:scoped] %>
 
   setup do
     opts =

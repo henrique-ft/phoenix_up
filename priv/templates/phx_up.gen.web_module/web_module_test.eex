@@ -1,3 +1,4 @@
 defmodule <%= @context[:web_module] %>.<%= @context[:scoped] %>Test do
   use <%= @context[:web_module] %>.ConnCase, async: true
+  alias <%= @context[:web_module] %>.<%= @context[:scoped] %>
 end
