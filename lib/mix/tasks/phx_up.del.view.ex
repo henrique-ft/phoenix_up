@@ -38,13 +38,13 @@ defmodule Mix.Tasks.PhxUp.Del.View do
 
   defp delete_view(context) do
     path = "lib/#{context[:web_path]}/views/#{context[:path]}_view.ex"
-    IO.puts(IO.ANSI.yellow() <> "* deleting " <> IO.ANSI.reset() <> path)
+    IO.puts(IO.ANSI.light_magenta() <> "* deleting " <> IO.ANSI.reset() <> path)
     File.rm!(path)
   end
 
   defp delete_view_test(context) do
     path = "test/#{context[:web_path]}/views/#{context[:path]}_view_test.exs"
-    IO.puts(IO.ANSI.yellow() <> "* deleting " <> IO.ANSI.reset() <> path)
+    IO.puts(IO.ANSI.light_magenta() <> "* deleting " <> IO.ANSI.reset() <> path)
     File.rm!(path)
   end
 

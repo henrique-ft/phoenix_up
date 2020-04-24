@@ -37,7 +37,7 @@ defmodule Mix.Tasks.PhxUp.Del.Template do
 
   defp create_template(context) do
     path = "lib/#{context[:web_path]}/templates/#{context[:path]}.html.eex"
-    IO.puts(IO.ANSI.yellow() <> "* deleting " <> IO.ANSI.reset() <> path)
+    IO.puts(IO.ANSI.light_magenta() <> "* deleting " <> IO.ANSI.reset() <> path)
     File.rm!(path)
   end
 
