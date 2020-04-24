@@ -38,19 +38,14 @@ defmodule Mix.Tasks.PhxUp.Del.Plug do
 
   defp delete_plug(context) do
     path = "lib/#{context[:web_path]}/plugs/#{context[:path]}.ex"
-    IO.puts(IO.ANSI.yellow() <> "* deleting " <> IO.ANSI.reset() <> path)
+    IO.puts(IO.ANSI.light_magenta() <> "* deleting " <> IO.ANSI.reset() <> path)
     File.rm!(path)
   end
 
   defp delete_plug_test(context) do
     path = "test/#{context[:web_path]}/plugs/#{context[:path]}_test.exs"
-    IO.puts(IO.ANSI.yellow() <> "* deleting " <> IO.ANSI.reset() <> path)
+    IO.puts(IO.ANSI.light_magenta() <> "* deleting " <> IO.ANSI.reset() <> path)
     File.rm!(path)
-  end
-
-  defp copy_template(name, final_path, opts) do
-    Path.join(:code.priv_dir(:phoenix_up), "templates/phx_up.gen.plug/#{name}")
-    |> Mix.Generator.copy_template(final_path, opts)
   end
 
   defp get_context([module|_]), do: PhoenixUp.inflect(module)

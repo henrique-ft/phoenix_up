@@ -37,13 +37,13 @@ defmodule Mix.Tasks.PhxUp.Del.Controller do
 
   defp delete_controller(context) do
     path = "lib/#{context[:web_path]}/controllers/#{context[:path]}_controller.ex"
-    IO.puts(IO.ANSI.yellow() <> "* deleting " <> IO.ANSI.reset() <> path)
+    IO.puts(IO.ANSI.light_magenta() <> "* deleting " <> IO.ANSI.reset() <> path)
     File.rm!(path)
   end
 
   defp delete_controller_test(context) do
     path = "test/#{context[:web_path]}/controllers/#{context[:path]}_controller_test.exs"
-    IO.puts(IO.ANSI.yellow() <> "* deleting " <> IO.ANSI.reset() <> path)
+    IO.puts(IO.ANSI.light_magenta() <> "* deleting " <> IO.ANSI.reset() <> path)
     File.rm!(path)
   end
 
