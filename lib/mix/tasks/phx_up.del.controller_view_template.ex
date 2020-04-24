@@ -43,7 +43,7 @@ defmodule Mix.Tasks.PhxUp.Del.ControllerViewTemplate do
 
   defp delete_controller_templates_folder(context) do
     path = "lib/#{context[:web_path]}/templates/#{context[:path]}"
-    IO.puts(IO.ANSI.light_red() <> "* deleting " <> IO.ANSI.reset() <> path)
+    IO.puts(IO.ANSI.yellow() <> "* deleting " <> IO.ANSI.reset() <> path)
     File.rmdir!(path)
   end
 
