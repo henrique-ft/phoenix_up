@@ -38,13 +38,13 @@ defmodule Mix.Tasks.PhxUp.Del.WebModule do
 
   defp delete_web_module(context) do
     path = "lib/#{context[:web_path]}/#{context[:path]}.ex"
-    IO.puts(IO.ANSI.light_red() <> "* deleting " <> IO.ANSI.reset() <> path)
+    IO.puts(IO.ANSI.yellow() <> "* deleting " <> IO.ANSI.reset() <> path)
     File.rm!(path)
   end
 
   defp delete_web_module_test(context) do
     path = "test/#{context[:web_path]}/#{context[:path]}_test.exs"
-    IO.puts(IO.ANSI.light_red() <> "* deleting " <> IO.ANSI.reset() <> path)
+    IO.puts(IO.ANSI.yellow() <> "* deleting " <> IO.ANSI.reset() <> path)
     File.rm!(path)
   end
 
