@@ -6,7 +6,7 @@
 
 Are you bored creating the same files again, again and again? Like *DuckController, DuckView, DuckControllerTest, templates/duck/*? So *PhoenixUp* if for you!
 
-![PhoenixUp](https://raw.githubusercontent.com/henriquefernandez/phoenix_up/master/priv/static/example.gif)
+![PhoenixUp](https://raw.githubusercontent.com/henriquefernandez/phoenix_up/master/priv/static/ex.gif)
 
 *PhoenixUp* provides a set of extra **generators** for develop *Phoenix* projects faster:
 
@@ -57,7 +57,7 @@ The package can be installed by adding `phoenix_up` to your list of dependencies
 ```elixir
 def deps do
   [
-    {:phoenix_up, "~> 0.2.4", only: :dev}
+    {:phoenix_up, "~> 0.2.5", only: :dev}
   ]
 end
 ```

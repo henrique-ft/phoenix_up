@@ -12,7 +12,7 @@ defmodule Mix.Tasks.PhxUp.Del.Cvt do
        ___| |_ _ _      |  |  |  _  |
       | . |   |_'_|     |  |  |   __|
       |  _|_|_|_,_|_____|_____|__|
-      |_|         |_____|            .del.controller_view
+      |_|         |_____|            .del.controller_view_template
       """)
     end
 
