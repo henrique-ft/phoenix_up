@@ -6,7 +6,7 @@
 
 Are you bored creating the same files again, again and again? Like *DuckController, DuckView, DuckControllerTest, templates/duck/*? So *PhoenixUp* if for you!
 
-![PhoenixUp](https://raw.githubusercontent.com/henriquefernandez/phoenix_up/master/priv/static/example.gif)
+![PhoenixUp](https://raw.githubusercontent.com/henriquefernandez/phoenix_up/master/priv/static/use_example.gif)
 
 *PhoenixUp* provides a set of extra **generators** for develop *Phoenix* projects faster:
 
