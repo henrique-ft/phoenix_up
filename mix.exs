@@ -4,7 +4,7 @@ defmodule PhoenixUp.MixProject do
   def project do
     [
       app: :phoenix_up,
-      version: "0.2.3",
+      version: "0.2.4",
       elixir: "~> 1.4",
       elixirc_paths: elixirc_paths(Mix.env()),
       build_embedded: Mix.env() == :prod,
