@@ -12,7 +12,7 @@ defmodule Mix.Tasks.PhxUp.Gen.Cvt do
        ___| |_ _ _      |  |  |  _  |
       | . |   |_'_|     |  |  |   __|
       |  _|_|_|_,_|_____|_____|__|
-      |_|         |_____|            .gen.controller_view
+      |_|         |_____|            .gen.controller_view_template
       """)
     end
 
