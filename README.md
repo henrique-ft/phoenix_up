@@ -4,7 +4,11 @@
 
 ![version badge](https://img.shields.io/hexpm/v/phoenix_up?style=social) ![license badge](https://img.shields.io/hexpm/l/phoenix_up?style=social)
 
-*PhoenixUp* provides extra **generators** for develop *Phoenix* projects faster:
+Are you bored creating the same files again, again and again? Like *DuckController, DuckView, DuckControllerTest, templates/duck/*? So *PhoenixUp* if for you!
+
+![PhoenixUp](https://raw.githubusercontent.com/henriquefernandez/phoenix_up/master/priv/static/example.gif)
+
+*PhoenixUp* provides a set of extra **generators** for develop *Phoenix* projects faster:
 
 `phx_up.gen.controller Some.ControllerName some_action another_action` (`phx_up.gen.c`)
 
