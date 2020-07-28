@@ -4,7 +4,7 @@
 
 ![version badge](https://img.shields.io/hexpm/v/phoenix_up?style=social) ![license badge](https://img.shields.io/hexpm/l/phoenix_up?style=social)
 
-Are you bored creating the same files again, again and again? Like *DuckController, DuckView, DuckControllerTest, templates/duck/*? So *PhoenixUp* if for you!
+Are you bored creating the same files again, again and again? Like *DuckController, DuckView, DuckControllerTest, templates/duck/*? So *PhoenixUp* is for you!
 
 ![PhoenixUp](https://raw.githubusercontent.com/henriquefernandez/phoenix_up/master/priv/static/use_example.gif)
 
